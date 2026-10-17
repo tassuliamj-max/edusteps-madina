@@ -480,7 +480,7 @@
     if (!file) return;
     const raw = await readFileAsDataURL(file);
     currentPhotoDataURL = await resizeImageDataURL(raw, 260);
-h    $('#studentPhotoPreview').innerHTML = `<img src="${currentPhotoDataURL}" alt="" />`;
+    $('#studentPhotoPreview').innerHTML = `<img src="${currentPhotoDataURL}" alt="" />`;
   });
 
   function wireDocInput(inputEl, labelEl, slot) {
